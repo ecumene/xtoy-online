@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CheerpJ test</title>
+    <script src="https://cjrtnc.leaningtech.com/2.1/loader.js"></script>
+  </head>
+  <body></body>
+  <div class="stuff">
+    <h1>Visual X-TOY</h1>
+    <b>Double-Tap Control-C/Cmd-C to Copy</b>
+    <br />
+    <br />
+    <button id="download">Download .toy Files</button>
+    <script>
+      cheerpjInit({ clipboardMode: "system" });
+      cheerpjCreateDisplay(800, 600);
+      cheerpjRunJar("/app/toy/toy.jar");
+    </script>
+    <script src="./libs/jszip.min.js"></script>
+    <script src="./libs/FileSaver.js"></script>
+    <script src="./index.js"></script>
+  </div>
+</html>
